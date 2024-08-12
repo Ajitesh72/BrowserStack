@@ -1,0 +1,58 @@
+/* App.css */
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.startSocket {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.startSocket:hover {
+  background-color: #0056b3;
+}
+
+.messageContainer {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 300px; /* Adjust as needed */
+}
+
+.message {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.message:last-child {
+  border-bottom: none;
+}
+
+.messageContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messageContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.messageContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
